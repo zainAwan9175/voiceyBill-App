@@ -1,0 +1,101 @@
+mobile:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/**'
+          - 'app.json'
+          - 'babel.config.js'
+
+android:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/**'
+          - 'app.json'
+          - '*.android.ts'
+          - '*.android.tsx'
+
+ios:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/**'
+          - 'app.json'
+          - '*.ios.ts'
+          - '*.ios.tsx'
+
+ui:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/components/**'
+          - 'src/screens/**'
+          - 'src/theme/**'
+
+feature:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/features/**'
+
+state-management:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/store/**'
+          - 'src/context/**'
+
+navigation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/navigation/**'
+
+audio:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/features/voice/**'
+          - 'src/lib/audioTranscode.ts'
+          - 'src/lib/transcode.ts'
+
+api-integration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/store/api-client.ts'
+          - 'src/features/*/services/**'
+
+accessibility:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/components/**'
+          - 'src/screens/**'
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'package.json'
+          - 'package-lock.json'
+
+config:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'app.json'
+          - 'tsconfig.json'
+          - 'babel.config.js'
+          - 'metro.config.js'
+
+ci/cd:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/workflows/**'
+          - '.github/**'
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '*.md'
+          - 'docs/**'
+          - 'README.md'
+          - 'CONTRIBUTING.md'
+
+testing:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.test.ts'
+          - '**/*.test.tsx'
+          - '**/*.spec.ts'
+          - '**/*.spec.tsx'
+          - 'jest.config.js'

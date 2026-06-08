@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "VoiceyBill",
+    "slug": "voiceybill-mobile",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#213E1A",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.voiceybill.app",
+      "icon": "./assets/icon.png",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "We use your microphone to record short voice notes for transactions.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.voiceybill.app",
+      "permissions": ["RECORD_AUDIO"],
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#213E1A"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to scan receipts."
+        }
+      ],
+      [
+        "expo-av",
+        {}
+      ]
+    ]
+  }
+}
