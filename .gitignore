@@ -42,3 +42,8 @@ Thumbs.db
 # Backup files
 *.backup
 *.bak
+.env.*
+*.env
+credentials.json
+*.pem
+.credentials
